@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 import PageMeta from "../components/common/PageMeta";
 import { useAuth } from "../context/AuthContext";
 import { loginStudent } from "../apis/student";
@@ -47,24 +47,6 @@ export default function LoginPage() {
       <PageMeta
         title="Login | Student Portal"
         description="Login to your Student Grievance Portal"
-      />
-      <Toaster
-        position="top-right"
-        containerStyle={{ zIndex: 999999 }}
-        toastOptions={{
-          style: {
-            background: "#1D2939",
-            color: "#fff",
-            border: "1px solid #344054",
-            borderRadius: "12px",
-          },
-          success: {
-            iconTheme: {
-              primary: "#465fff",
-              secondary: "#fff",
-            },
-          },
-        }}
       />
 
       <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 px-4">

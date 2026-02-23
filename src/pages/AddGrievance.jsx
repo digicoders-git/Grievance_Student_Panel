@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import PageMeta from "../components/common/PageMeta";
 import { createGrievance } from "../apis/student";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 export default function AddGrievance() {
   const [formData, setFormData] = useState({ subject: "", description: "" });
@@ -42,7 +42,6 @@ export default function AddGrievance() {
         title="New Grievance | Student Portal"
         description="Post a new grievance"
       />
-      <Toaster position="top-right" />
 
       <div className="max-w-full mx-auto">
         <div className="mb-6 flex items-center justify-between">

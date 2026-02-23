@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router";
 import PageMeta from "../components/common/PageMeta";
 import { createStudentPassword } from "../apis/student";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 export default function ChangePassword() {
   const navigate = useNavigate();
@@ -45,7 +45,6 @@ export default function ChangePassword() {
         title="Account Settings | Student Portal"
         description="Change your password"
       />
-      <Toaster position="top-right" />
 
       <div className="max-w-2xl mx-auto">
         {/* Header */}
