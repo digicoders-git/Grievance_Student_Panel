@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router";
 import PageMeta from "../components/common/PageMeta";
 import { fetchGrievanceDetails } from "../apis/student";
 import toast, { Toaster } from "react-hot-toast";
+import Loader from "../components/common/Loader";
 
 export default function GrievanceDetails() {
   const { id } = useParams();
