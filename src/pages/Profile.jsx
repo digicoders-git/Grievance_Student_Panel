@@ -91,10 +91,7 @@ export default function Profile() {
                 label="College / Institute"
                 value={profileData.college}
               />
-              <DetailItem
-                label="Date of Birth"
-                value={new Date(profileData.DOB).toLocaleDateString()}
-              />
+              <DetailItem label="Date of Birth" value={profileData.dob} />
             </div>
 
             <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-900/50 rounded-xl border border-gray-200 dark:border-gray-700">
